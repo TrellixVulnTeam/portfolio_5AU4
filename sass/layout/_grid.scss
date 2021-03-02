@@ -1,0 +1,30 @@
+.container-home{
+    display:grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    margin: auto;
+    max-width: 144rem;
+
+    grid-template-areas: "head head head head"
+                          "info info info info"
+                          "portfolio portfolio portfolio portfolio"
+                          "footer footer footer footer";
+
+
+    .header{
+        grid-area: head;
+        align-self: center;
+
+    }
+    .section-hero{
+        grid-area: info;
+        max-width: 140rem;
+    }
+    .section-portfolio{
+        grid-area: portfolio;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}

@@ -1,0 +1,30 @@
+.header{
+    &__navigation{
+        z-index: 1500;
+    }
+    &__list{
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+    &__item{
+        margin: 1rem;
+    }
+    &__link{
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            color: $color-black;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .4s;
+        }
+        &:hover,
+        &:active {
+            
+            color: $color-yellow-dark;        
+        }
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/svg" href="img/favicon.svg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian González | Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo.svg" alt="Sebgraph logo" class="header__icon">
+            <span class="header__text">SEBGRAPH</span>
+        </div>
+
+        <div class="header__menu">
+
+          <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="">Work</a></li>
+                <li class="header__item"><a class="header__link" href="">About</a></li>
+                <li class="header__item"><a class="header__link" href="">CV</a></li>
+                <li class="header__item"><a class="header__link" href="">Contact</a></li>
+            </ul>
+         </nav>
+            
+        </div>
+
+    </header>
+    <main class="container-home">
+        
+    <section class="section-hero">
+        <article class="section-hero__text-container">
+            <h1 class="heading-primary">I will help you to connect the users with your digital products through great experiences and memorable interfaces.</h1>
+            <div class="section-hero__hi-text">
+            <img class="section-hero__icon" src="img/icon-hi.svg" alt="Hi icon">
+            <span class="section-hero__name heading-tertiary">Hi! i'm Sebastian González, An <strong class="section-hero__name--rol"> UI designer.</strong></span>
+            </div>
+        </article>
+        <img class="section-hero__img" src="img/img-home.svg" alt="sebgraph illustration">
+    </section>
+
+    <section class="section-portfolio">
+        <div class="section-portfolio__btn-container">
+            <button class="btn-filter filter-active section-portfolio__item">All</button>
+            <button class="btn-filter section-portfolio__item">UI</button>
+            <button class="btn-filter section-portfolio__item">Visual</button>
+        </div>
+
+        <!-- PORTFOLIO GALLERY GRID -->
+        <article class="section-portfolio__container-grid" data-att="all">
+            <figure class="section-portfolio__card-project card" data-att="ui">
+                <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech">
+                <div class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Project name</h2>
+                <p class="paragraph">Company | year</p>
+                </div>
+            
+            </figure>
+            <figure class="section-portfolio__card-project card" data-att="ui">
+                <img class="section-portfolio__img" src="https://placeimg.com/630/630/nature" alt="Nature">
+                <div class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Project name</h2>
+                <p class="paragraph">Company | year</p>
+                </div>
+            </figure>
+            <figure class="section-portfolio__card-project card" data-att="visual">
+                <img class="section-portfolio__img" src="https://placeimg.com/630/630/animals" alt="Animals">
+                <div class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Project name</h2>
+                <p class="paragraph">Company | year</p>
+                </div>
+            </figure>
+            <figure class="section-portfolio__card-project card" data-att="visual">
+                <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech">
+                <div class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Project name</h2>
+                <p class="paragraph">Company | year</p>
+                </div>
+
+            </figure>
+        </article>
+        <!-- END GRID -->
+    </section>
+    </main>
+
+    <footer class="footer">
+<!--         <label id="language-toggle" class="switch-light switch-candy" onclick="">
+            <input type="checkbox">
+              <span>EN</span>
+              <span>ID</span>
+        </label> -->
+        <h2 class="footer__heading heading-secondary">Let’s work together</h3>
+        <p class="footer__text heading-tertiary">Also you can check my work here</p>
+        <div class="footer__social-container">
+            <i class="fab fa-instagram-square footer__social-item"></i>
+            <i class="fab fa-linkedin footer__social-item"></i>
+            <i class="fab fa-behance-square footer__social-item"></i>            
+        </div>
+        <p class="footer__small">All content and images Copyright © 2021 Sebastian González</p>
+    </footer>
+    
+
+
+    <!-- Script -->
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

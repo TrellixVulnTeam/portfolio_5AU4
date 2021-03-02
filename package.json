@@ -1,0 +1,14 @@
+{
+  "name": "sebgraph-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio UI 2021",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Sebastian González",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+.footer{
+    background-color:  $color-grey-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    text-align: center;
+
+    &__heading{
+        margin-bottom: 2rem;
+    }
+    &__text{
+        margin-bottom: 4rem;
+    }
+
+    
+    &__social-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    &__social-item{
+        font-size: 4rem;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+}

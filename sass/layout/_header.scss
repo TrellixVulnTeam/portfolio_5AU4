@@ -1,0 +1,36 @@
+.header{
+    align-items: center;
+    background-color: $color-white;
+    max-width: 144rem;
+    margin: auto;
+    justify-content: space-between;
+    height: 7.4rem;
+    display:flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+
+    &__logo-box{
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        margin-right: 1rem;
+    }
+    &__text{
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+    }
+    &__item{
+        margin-right: 2rem;
+    }
+}
