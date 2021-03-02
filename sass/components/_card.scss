@@ -19,7 +19,8 @@
     &__img{
         object-fit: cover;
         transition: all 0.3s ease-out;
-        width: 100%;
+        width: fit-content;
+        height: 100%;
         &:hover{
             transform: scale(1.2);
             filter:  brightness(80%);

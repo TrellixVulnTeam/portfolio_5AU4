@@ -1,6 +1,10 @@
 .header{
+    transition: all .4s ease-in-out;
     &__navigation{
         z-index: 1500;
+        @include respond(tab-port){
+            display: none;
+            }
     }
     &__list{
         list-style: none;
@@ -27,4 +31,30 @@
             color: $color-yellow-dark;        
         }
     }
+
+    &__btn-responsive {
+    
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    
+    
+        @include respond(tab-port){
+            z-index: 999;
+            top: 0;
+            right: 1vw;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            padding: 0;
+            order: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--main-color);
+            outline: 0;
+            opacity: 1;
+            visibility: visible;
+            }
+      }
 }
