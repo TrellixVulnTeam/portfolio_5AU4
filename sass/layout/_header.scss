@@ -8,30 +8,75 @@
     height: 7.4rem;
     display:flex;
     flex-direction: row;
-    padding: 2rem 4rem;
+    //padding: 2rem 4rem;
+    padding: 2rem 0rem;
+
+    @include respond(phone){
+        justify-content: center;
+    }
+    
 
     &__logo-box{
         display: flex;
         align-items: center;
+        margin-left: 4rem;
+
+        @include respond(phone){
+            flex-direction: column;
+            margin-left: 0;
+            margin-top: 4rem;
+        }
     }
     &__icon{
         margin-right: 1rem;
     }
     &__text{
-        font-size: 2.4rem;
+        font-size: 24px;
         font-weight: 500;
     }
 
     &__menu{
         display: flex;
         flex-direction: row;
+        margin-right: 4rem;
+        @include respond(phone){
+            position: fixed;
+            bottom: 0;
+            z-index: 9999;
+            justify-content: center;
+            margin-right: 0;
+        }
     }
 
     &__list{
         display: flex;
         flex-direction: row;
+
+        @include respond(phone){
+            align-items: center;
+            backface-visibility: hidden;
+            background-color: $color-white;
+            border-top: 1px solid $color-grey-light-2;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__item{
         margin-right: 2rem;
+        @include respond(phone){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__icon-responsive{
+        width: 24px;
+        height: 24px;
+        background-color: $color-grey-dark;
+        display: none;
+        @include respond(phone){
+            display: flex;
+        }
     }
 }

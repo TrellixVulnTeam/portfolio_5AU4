@@ -5,6 +5,6 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
     portfolioFilter();
-    hamburguerMenu(".header__btn-responsive", ".header__navigation", ".header__link");
+    hamburguerMenu(".header__btn-responsive", ".header__menu", ".header__link");
 
 });

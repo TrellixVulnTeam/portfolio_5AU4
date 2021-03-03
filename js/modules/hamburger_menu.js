@@ -2,7 +2,7 @@ const d = document;
 
 export default function hamburguerMenu(menuBtn, menu, menuLink){
 
-    d.addEventListener("click", (e)=> {
+/*     d.addEventListener("click", (e)=> {
         if(e.target.matches(menuBtn) || e.target.matches(`${menuBtn} *`)){
             d.querySelector(menu).classList.toggle("is-active");
             d.querySelector(menuBtn).classList.toggle("is-active");
@@ -13,6 +13,6 @@ export default function hamburguerMenu(menuBtn, menu, menuLink){
           d.querySelector(menuBtn).classList.remove("is-active");
 
         }
-    });
+    }); */
 
 }
