@@ -49,6 +49,9 @@ body {
   margin-bottom: 4rem;
   font-size: 4.8rem;
   line-height: 120%; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 3.2rem; } }
 
 .heading-secondary {
   color: #222;
@@ -62,6 +65,9 @@ body {
   font-size: 2.4rem;
   line-height: 120%;
   font-weight: 500; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 2.1rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -78,6 +84,14 @@ body {
 
 .is-active {
   display: flex !important; }
+
+.menu-active {
+  opacity: 1 !important; }
+  .menu-active__link {
+    font-weight: 600 !important; }
+
+.menu-inactive {
+  opacity: .4; }
 
 /* animation header */
 @keyframes moveInLeft {
@@ -307,16 +321,15 @@ body {
         justify-content: center;
         align-items: center; } }
   .header__item {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    cursor: pointer; }
     @media only screen and (max-width: 37.5em) {
       .header__item {
         align-items: center;
         display: flex;
         flex-direction: column; } }
   .header__icon-responsive {
-    width: 24px;
-    height: 24px;
-    background-color: #999;
+    width: auto;
     display: none; }
     @media only screen and (max-width: 37.5em) {
       .header__icon-responsive {
@@ -334,7 +347,9 @@ body {
       width: 100vw; } }
 
 .header__item {
-  margin: 1rem; }
+  margin: 1rem;
+  opacity: .4;
+  transition: all .4s ease-in-out; }
   @media only screen and (max-width: 37.5em) {
     .header__item {
       display: flex;
@@ -342,15 +357,16 @@ body {
 
 .header__link:link, .header__link:visited {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   padding: 1rem 2rem;
-  color: #000;
+  color: #222;
   text-decoration: none;
   text-transform: capitalize;
   transition: all .4s; }
 
 .header__link:hover, .header__link:active {
-  color: #EF9700; }
+  color: #222;
+  font-weight: 600; }
 
 .footer {
   background-color: #F5F5F5;
@@ -359,6 +375,9 @@ body {
   justify-content: center;
   padding: 4rem;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding-bottom: 14rem; } }
   .footer__heading {
     margin-bottom: 2rem; }
   .footer__text {
@@ -381,6 +400,9 @@ body {
   padding: 4rem;
   display: flex;
   flex-direction: row; }
+  @media only screen and (max-width: 37.5em) {
+    .section-hero {
+      padding: 2rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-hero {
       flex-direction: column;
@@ -409,7 +431,10 @@ body {
 
 .section-portfolio {
   background-color: #fff;
-  margin: 0 4rem; }
+  margin: 0 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-portfolio {
+      margin: 0; } }
   .section-portfolio__btn-container {
     display: flex;
     justify-content: center;

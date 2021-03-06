@@ -8,3 +8,13 @@
 .is-active {
     display: flex !important;
   }
+
+.menu-active{
+    opacity: 1 !important;
+    &__link{
+        font-weight: 600 !important;
+    }
+}
+.menu-inactive{
+    opacity: .4;
+}

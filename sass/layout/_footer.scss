@@ -5,6 +5,9 @@
     justify-content: center;
     padding: 4rem;
     text-align: center;
+    @include respond(phone){
+        padding-bottom: 14rem;
+    }
 
     &__heading{
         margin-bottom: 2rem;

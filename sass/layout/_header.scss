@@ -64,6 +64,7 @@
     }
     &__item{
         margin-right: 2rem;
+        cursor: pointer;
         @include respond(phone){
             align-items: center;
             display: flex;
@@ -71,9 +72,7 @@
         }
     }
     &__icon-responsive{
-        width: 24px;
-        height: 24px;
-        background-color: $color-grey-dark;
+        width: auto;
         display: none;
         @include respond(phone){
             display: flex;

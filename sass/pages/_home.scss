@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: row;
 
+    @include respond(phone){
+        padding:2rem;
+    }
+
     @include respond(tab-port){
         flex-direction: column;
         margin: 0 2rem;
@@ -46,7 +50,10 @@
 
 .section-portfolio{
     background-color: $color-white;
-    margin: 0 4rem;
+    margin: 0 2rem;
+    @include respond(tab-port){
+        margin: 0;
+    }
     &__btn-container{
         display: flex;
         justify-content: center;
