@@ -236,6 +236,9 @@ body {
 .section-portfolio .card {
   animation: portfolio .5s ease-in-out;
   animation-fill-mode: backwards; }
+  @media only screen and (max-width: 37.5em) {
+    .section-portfolio .card {
+      animation: none; } }
 
 .section-portfolio__img {
   object-fit: cover;
@@ -268,6 +271,18 @@ body {
     grid-area: portfolio; }
   .container-home .footer {
     grid-area: footer; }
+
+.container-about {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin: auto;
+  grid-template-areas: "hero hero hero hero" "profile profile profile profile"; }
+  .container-about .hero-about {
+    grid-area: hero; }
+  .container-about .profile {
+    grid-area: profile; }
 
 .header {
   position: sticky;
@@ -453,3 +468,50 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section-portfolio__container-grid {
         grid-template-columns: 100%; } }
+
+.hero-about {
+  align-items: center;
+  background-color: #F5F5F5;
+  display: flex;
+  height: 50rem;
+  justify-content: center;
+  padding: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-about {
+      height: auto; } }
+  .hero-about__hero-container {
+    align-items: center;
+    display: flex;
+    width: 140rem;
+    justify-content: space-between;
+    padding: 0 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-about__hero-container {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem; } }
+
+.profile {
+  align-items: center;
+  display: flex;
+  height: 50rem;
+  justify-content: center;
+  padding: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .profile {
+      height: auto; } }
+  .profile__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    width: 140rem; }
+    @media only screen and (max-width: 56.25em) {
+      .profile__container {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem; } }
+  .profile__text-box {
+    width: 60rem; }
+  :is(.profile__text, .profile__paragraph) {
+    margin-bottom: 2rem; }

@@ -28,3 +28,25 @@
         grid-area: footer;
     }
 }
+
+.container-about{
+    display:grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    margin: auto;
+
+
+    grid-template-areas: "hero hero hero hero"
+                         "profile profile profile profile";
+
+    .hero-about{
+        grid-area: hero;
+
+    }
+    .profile{
+        grid-area: profile;
+
+    }
+
+}
