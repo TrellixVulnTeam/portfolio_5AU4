@@ -1,0 +1,65 @@
+.hero-contact{
+    align-items: center;
+    background-color: $color-grey-light;
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+    padding: 4rem;
+
+    @include respond(tab-port){
+        height: auto;
+    }
+
+    &__container{
+        align-items: center;
+        display: flex;
+        width: $width-container;
+        justify-content: space-between;
+        padding: 0 4rem ;
+
+
+    @include respond(tab-port){
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    }
+
+    &__img{
+        width: auto;
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+    
+
+}
+
+.contact-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+    & h2{
+        margin-bottom: 2rem;
+    }
+
+    &__text-box{
+        margin-bottom: 4rem;
+    }
+    
+
+    &__btns{
+        
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port){
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+    }
+}

@@ -59,32 +59,32 @@
 .container-cv{
     display:grid;
     grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 4rem;
     margin: auto;
     max-width: $width-container;
     padding: 0 4rem;
 
-    grid-template-areas: "name-cv name-cv name-cv name-cv"
-                         "profile-cv profile-cv profile-cv profile-cv"
-                         "experience-cv experience-cv experience-cv education-cv"
-                         "skills-cv skills-cv skills-cv languages-cv"
-                         "skills-cv skills-cv skills-cv hobbies-cv"
-                         "download-cv download-cv download-cv download-cv";
+    grid-template-areas: "name-cv name-cv name-cv name-cv name-cv"
+                         "profile-cv profile-cv profile-cv profile-cv profile-cv"
+                         "experience-cv experience-cv experience-cv education-cv education-cv"
+                         "skills-cv skills-cv skills-cv languages-cv languages-cv"
+                         "skills-cv skills-cv skills-cv hobbies-cv hobbies-cv"
+                         "download-cv download-cv download-cv download-cv download-cv";
 
      @include respond(tab-port){
         grid-template-rows: repeat(8, auto);
         grid-gap: 2rem;
         padding: 0 2rem;
 
-        grid-template-areas: "name-cv name-cv name-cv name-cv"
-        "profile-cv profile-cv profile-cv profile-cv"
-        "experience-cv experience-cv experience-cv experience-cv"
-        "education-cv education-cv education-cv education-cv"
-        "skills-cv skills-cv skills-cv skills-cv"
-        "languages-cv languages-cv languages-cv languages-cv"
-        "hobbies-cv hobbies-cv hobbies-cv hobbies-cv"
-        "download-cv download-cv download-cv download-cv";
+        grid-template-areas: "name-cv name-cv name-cv name-cv name-cv"
+        "profile-cv profile-cv profile-cv profile-cv profile-cv"
+        "experience-cv experience-cv experience-cv experience-cv experience-cv"
+        "education-cv education-cv education-cv education-cv education-cv"
+        "skills-cv skills-cv skills-cv skills-cv skills-cv"
+        "languages-cv languages-cv languages-cv languages-cv languages-cv"
+        "hobbies-cv hobbies-cv hobbies-cv hobbies-cv hobbies-cv"
+        "download-cv download-cv download-cv download-cv download-cv";
         width: auto;
         
     }
@@ -145,5 +145,31 @@
         padding: 4rem;
 
     }
+
+}
+
+.container-contact{
+    display:grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    margin: auto;
+
+    grid-template-areas: 
+                         "hero-contact hero-contact hero-contact hero-contact"
+                         "info info info info";
+    
+
+    .hero-contact{
+        grid-area: hero-contact;
+
+    }
+    .contact-btns{
+        grid-area: info;
+        background-color: $color-white;
+        padding: 4rem;
+
+    }
+
 
 }

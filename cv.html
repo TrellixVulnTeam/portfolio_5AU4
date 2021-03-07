@@ -47,15 +47,18 @@
 
     <main class="container-cv">
         <section class="name-cv">
+            <article class="name-cv__text-box">
             <h1 class="heading-primary">Sebastian González</h1>
             <span class="heading-tertiary">UI Designer.</span>
+            </article>
+            <figure class="name-cv__img"></figure>
 
         </section>
 
         <section class="profile-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/profile-icon.svg" alt="profile">
             <article class="profile-cv__text-box">
-                <h2 class="heading-secondary">Profile</h2>
+                <h2 class="heading-secondary subtitle">Profile</h2>
                 <p class="paragraph">Hi!!, I am an UI designer who believe in digital products that connect the design focused in people experiences.
                     I will help you to connect the users with your digital products through great interfaces and experiences.</p>
             </article>
@@ -63,23 +66,40 @@
         </section>
 
         <section class="experience-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/experience-icon.svg" alt="experience">
             <article class="experience-cv__text-box">
-                <h2 class="heading-secondary">Experience</h2>
+                <h2 class="heading-secondary subtitle">Experience</h2>
                 <div class="experience-cv__experience-container">
                     <div class="experience-cv__head-container">
                         <h3 class="heading-tertiary">UI Designer</h3>
                         <span class="body-large">Cheil World Wide / Bogotá / 2019 - currently</span>
-                        <ol>
-                            <ul>
-                                <li>Develop of interface design for websites and apps on new functionalities within iterative processes for huge brands like Samsung.</li>
-                                <li>Wireframes and prototype development for different products.</li>
-                                <li>Develop, managing and maintaining of design systems. </li>
-                                <li>Communication and understanding of UX process and teams transforming different research results in visual interfaces.</li>
-                                <li>Communication with development team to create consistent components.</li>
-                            </ul>
-                        </ol>
                     </div>
+                    <ol>
+                        <ul class="experience-cv__items paragraph">
+                            <li class="experience-cv__item">Develop of interface design for websites and apps on new functionalities within iterative processes for huge brands like Samsung.</li>
+                            <li class="experience-cv__item">Wireframes and prototype development for different products.</li>
+                            <li class="experience-cv__item">Develop, managing and maintaining of design systems. </li>
+                            <li class="experience-cv__item">Communication and understanding of UX process and teams transforming different research results in visual interfaces.</li>
+                            <li class="experience-cv__item">Communication with development team to create consistent components.</li>
+                        </ul>
+                    </ol>
+                </div>
+
+                <div class="experience-cv__experience-container">
+                    <div class="experience-cv__head-container">
+                        <h3 class="heading-tertiary">Graphic and web designer</h3>
+                        <span class="body-large">Solutions Group / Bogotá / 2015 - 2019</span>
+                    </div>
+                    <ol>
+                        <ul class="experience-cv__items paragraph">
+                            <li class="experience-cv__item">Conceptualization, design, and coding for a new
+                                e-commerce platform for the innovation lab of the company called ProtoLab, using UX research methodologies and interface design.</li>
+                            <li class="experience-cv__item">Communication and understanding of UX process with different research methods like emphaty maps, user journeys and interviews.</li>
+                            <li class="experience-cv__item">Develop of digital products focused in websites design and social media content. </li>
+                            <li class="experience-cv__item">Participation in digital campaigns and global brand activations of projects with global brands like Coca-Cola and Av-inbev.</li>
+                           
+                        </ul>
+                    </ol>
                 </div>
 
             </article>
@@ -87,25 +107,25 @@
         </section>
 
         <section class="education-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/education-icon.svg" alt="education">
             <article class="education-cv__text-box">
-                <h2 class="heading-secondary">Education</h2>
+                <h2 class="heading-secondary subtitle">Education</h2>
                 <div class="education-cv__course">
-                    <h3 class="heading-tertiary">Course of design and marketing of websites.</h3>
-                    <p class="body-large">Universidad Jorge Tadeo Lozano.</p>
-                    <p>2019.</p>
+                    <h3 class="heading-tertiary education-cv__course-name">Course of design and marketing of websites.</h3>
+                    <p class="body-large education-cv__university">Universidad Jorge Tadeo Lozano.</p>
+                    <p class="paragraph">2019.</p>
                     <hr>
                 </div>
                 <div class="education-cv__course">
-                    <h3 class="heading-tertiary">Course of branding.</h3>
-                    <p class="body-large">Universidad Jorge Tadeo Lozano.</p>
-                    <p>2018.</p>
+                    <h3 class="heading-tertiary education-cv__course-name">Course of branding.</h3>
+                    <p class="body-large education-cv__university">Universidad Jorge Tadeo Lozano.</p>
+                    <p class="paragraph">2018.</p>
                     <hr>
                 </div>
                 <div class="education-cv__course">
-                    <h3 class="heading-tertiary">Graphic design degree.</h3>
-                    <p class="body-large">Universidad Los Libertadores.</p>
-                    <p>2010/2014.</p>
+                    <h3 class="heading-tertiary education-cv__course-name">Graphic design degree.</h3>
+                    <p class="body-large education-cv__university">Universidad Los Libertadores.</p>
+                    <p class="paragraph">2010/2014.</p>
                     <hr>
                 </div>
 
@@ -114,37 +134,37 @@
         </section>
 
         <section class="skills-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/skills-icon.svg" alt="">
             <article class="skills-cv__skills-container">
-                <h2 class="heading-secondary">Skills</h2>
+                <h2 class="heading-secondary subtitle">Skills</h2>
                 <div class="skills-cv__skill">
-                    <h3 class="heading-tertiary">Professional</h3>
+                    <h3 class="heading-tertiary skills-cv__field">Professional</h3>
                     <div class="skills-cv__item">
                         <p class="body-large">Time management</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">90%</p>
+                            <progress class="skills-cv__bar" value="90" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">90%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">Teamwork</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">85%</p>
+                            <progress class="skills-cv__bar" value="85" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">85%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">Flexibility</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">75%</p>
+                            <progress class="skills-cv__bar" value="75" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">75%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">Communication</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">70%</p>
+                            <progress class="skills-cv__bar" value="70" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">70%</p>
                         </div>
                     </div>
 
@@ -152,33 +172,33 @@
                 </div>
 
                 <div class="skills-cv__skill">
-                    <h3 class="heading-tertiary">Technical</h3>
+                    <h3 class="heading-tertiary skills-cv__field">Technical</h3>
                     <div class="skills-cv__item">
                         <p class="body-large">Prototyping figma XD</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">90%</p>
+                            <progress class="skills-cv__bar" value="90" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">90%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">HTML / CSS - SASS</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">85%</p>
+                            <progress class="skills-cv__bar" value="85" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">85%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">JavaScript</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">30%</p>
+                            <progress class="skills-cv__bar" value="30" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">30%</p>
                         </div>
                     </div>
                     <div class="skills-cv__item">
                         <p class="body-large">Visual Design</p>
                         <div class="skills-cv__bar-container">
-                            <div class="skills-cv_bar"></div>
-                            <p class="skills-cv__percent">85%</p>
+                            <progress class="skills-cv__bar" value="85" max="100"></progress>
+                            <p class="skills-cv__percent paragraph">85%</p>
                         </div>
                     </div>
 
@@ -190,28 +210,28 @@
         </section>
 
         <section class="languages-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/languages-icon.svg" alt="language">
             <article class="languages-cv__text-box">
-                <h2 class="heading-secondary">Languages</h2>
+                <h2 class="heading-secondary subtitle">Languages</h2>
                 <div class="languages-cv__item">
-                    <p class="body-large">English</p>
+                    <p class="body-large languages-cv__language">English</p>
                     <div class="languages-cv__bar-container">
-                        <div class="languages-cv_bar"></div>
-                        <p class="languages-cv__percent">B2</p>
+                        <progress class="languages-cv__bar" value="75" max="100"></progress>
+                        <p class="languages-cv__percent paragraph">B2</p>
                     </div>
                 </div>
                 <div class="languages-cv__item">
-                    <p class="body-large">Portuguese</p>
+                    <p class="body-large languages-cv__language">Portuguese</p>
                     <div class="languages-cv__bar-container">
-                        <div class="languages-cv_bar"></div>
-                        <p class="languages-cv__percent">B2</p>
+                        <progress class="languages-cv__bar" value="75" max="100"></progress>
+                        <p class="languages-cv__percent paragraph">B2</p>
                     </div>
                 </div>
                 <div class="languages-cv__item">
-                    <p class="body-large">Spanish</p>
+                    <p class="body-large languages-cv__language">Spanish</p>
                     <div class="languages-cv__bar-container">
-                        <div class="languages-cv_bar"></div>
-                        <p class="languages-cv__percent">Native</p>
+                        <progress class="languages-cv__bar" value="100" max="100"></progress>
+                        <p class="languages-cv__percent paragraph">Native</p>
                     </div>
                 </div>
 
@@ -220,19 +240,25 @@
         </section>
 
         <section class="hobbies-cv">
-            <img src="" alt="">
+            <img class="icon" src="img/hobbies-icon.svg" alt="hobbies">
             <div class="hobbies-cv__text-box">
-                <h2 class="heading-secondary">Hobbies</h2>
+                <h2 class="heading-secondary subtitle">Hobbies</h2>
+                <div class="hobbies-cv__icons">
+                    <img class="hobbies-cv__icon" src="" alt="">
+                    <img class="hobbies-cv__icon" src="" alt="">
+                    <img class="hobbies-cv__icon" src="" alt="">
+                    <img class="hobbies-cv__icon" src="" alt="">
+                </div>
 
             </div>
 
         </section>
 
         <section class="download-cv">
-            <h2 class="heading-secondary">Let’s talk</h2>
+            <h2 class="heading-secondary subtitle">Let’s talk</h2>
             <div class="download-cv__btns">
-                <button>Write me</button>
-                <button>Download PDF</button>
+                <button class="btn btn--secondary btn--animated">Write me</button>
+                <button class="btn btn--primary btn--animated">Download PDF</button>
             </div>
 
 
