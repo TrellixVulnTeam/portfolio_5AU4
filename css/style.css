@@ -69,6 +69,9 @@ body {
     .heading-tertiary {
       font-size: 2.1rem; } }
 
+.body-large {
+  font-size: 1.8rem; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -256,21 +259,24 @@ body {
 
 .container-home {
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
   margin: auto;
   max-width: 144rem;
-  grid-template-areas: "head head head head" "info info info info" "portfolio portfolio portfolio portfolio" "footer footer footer footer"; }
-  .container-home .header {
-    grid-area: head;
-    align-self: center; }
+  grid-template-areas: "info info info info" "portfolio portfolio portfolio portfolio";
+  /*     .header{
+        grid-area: head;
+        align-self: center;
+
+    } */
+  /*     .footer{
+        grid-area: footer;
+    } */ }
   .container-home .section-hero {
     grid-area: info; }
   .container-home .section-portfolio {
     grid-area: portfolio; }
-  .container-home .footer {
-    grid-area: footer; }
 
 .container-about {
   display: grid;
@@ -278,35 +284,101 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
   margin: auto;
-  grid-template-areas: "hero hero hero hero" "profile profile profile profile"; }
+  grid-template-areas: "hero hero hero hero" "perfil perfil perfil perfil"; }
   .container-about .hero-about {
     grid-area: hero; }
   .container-about .profile {
-    grid-area: profile; }
+    grid-area: perfil; }
+
+.container-cv {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin: auto;
+  max-width: 140rem;
+  padding: 0 4rem;
+  grid-template-areas: "name-cv name-cv name-cv name-cv" "profile-cv profile-cv profile-cv profile-cv" "experience-cv experience-cv experience-cv education-cv" "skills-cv skills-cv skills-cv languages-cv" "skills-cv skills-cv skills-cv hobbies-cv" "download-cv download-cv download-cv download-cv"; }
+  @media only screen and (max-width: 56.25em) {
+    .container-cv {
+      grid-template-rows: repeat(8, auto);
+      grid-gap: 2rem;
+      padding: 0 2rem;
+      grid-template-areas: "name-cv name-cv name-cv name-cv" "profile-cv profile-cv profile-cv profile-cv" "experience-cv experience-cv experience-cv experience-cv" "education-cv education-cv education-cv education-cv" "skills-cv skills-cv skills-cv skills-cv" "languages-cv languages-cv languages-cv languages-cv" "hobbies-cv hobbies-cv hobbies-cv hobbies-cv" "download-cv download-cv download-cv download-cv";
+      width: auto; } }
+  .container-cv .name-cv {
+    border-radius: 2rem;
+    grid-area: name-cv;
+    background-color: #EF9700;
+    padding: 4rem; }
+  .container-cv .profile-cv {
+    border-radius: 2rem;
+    grid-area: profile-cv;
+    background-color: #F5F5F5;
+    padding: 4rem; }
+  .container-cv .experience-cv {
+    border-radius: 2rem;
+    grid-area: experience-cv;
+    background-color: #140C03;
+    padding: 4rem; }
+  .container-cv .education-cv {
+    border-radius: 2rem;
+    grid-area: education-cv;
+    background-color: #F5F5F5;
+    padding: 4rem; }
+  .container-cv .skills-cv {
+    border-radius: 2rem;
+    grid-area: skills-cv;
+    background-color: #F5F5F5;
+    padding: 4rem; }
+  .container-cv .languages-cv {
+    border-radius: 2rem;
+    grid-area: languages-cv;
+    background-color: #EF9700;
+    padding: 4rem; }
+  .container-cv .hobbies-cv {
+    border-radius: 2rem;
+    grid-area: hobbies-cv;
+    background-color: #FFA939;
+    padding: 4rem; }
+  .container-cv .download-cv {
+    border-radius: 2rem;
+    grid-area: download-cv;
+    background-color: #fff;
+    padding: 4rem; }
 
 .header {
   position: sticky;
   align-items: center;
   background-color: #fff;
-  max-width: 144rem;
+  max-width: 140rem;
   margin: auto;
   justify-content: space-between;
   height: 7.4rem;
   display: flex;
   flex-direction: row;
-  padding: 2rem 0rem; }
+  padding: 4rem;
+  /*     &__container{
+        display: flex;
+        justify-content: space-between;
+        width: $width-container;
+    } */ }
   @media only screen and (max-width: 37.5em) {
     .header {
-      justify-content: center; } }
+      justify-content: center;
+      height: auto;
+      width: auto;
+      padding: 2rem; } }
   .header__logo-box {
     display: flex;
     align-items: center;
-    margin-left: 4rem; }
+    text-decoration: none;
+    outline: none;
+    color: #000; }
     @media only screen and (max-width: 37.5em) {
       .header__logo-box {
         flex-direction: column;
-        margin-left: 0;
-        margin-top: 4rem; } }
+        margin-left: 0; } }
   .header__icon {
     margin-right: 1rem; }
   .header__text {
@@ -314,8 +386,7 @@ body {
     font-weight: 500; }
   .header__menu {
     display: flex;
-    flex-direction: row;
-    margin-right: 4rem; }
+    flex-direction: row; }
     @media only screen and (max-width: 37.5em) {
       .header__menu {
         position: fixed;
@@ -489,7 +560,12 @@ body {
       .hero-about__hero-container {
         flex-direction: column;
         height: auto;
-        padding: 4rem; } }
+        padding: 0; } }
+  .hero-about__img {
+    width: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .hero-about__img {
+        width: 100%; } }
 
 .profile {
   align-items: center;
@@ -510,8 +586,17 @@ body {
       .profile__container {
         flex-direction: column;
         height: auto;
-        padding: 4rem; } }
+        padding: 0; } }
   .profile__text-box {
     width: 60rem; }
+    @media only screen and (max-width: 56.25em) {
+      .profile__text-box {
+        width: 100%; } }
+  .profile__img {
+    width: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .profile__img {
+        width: 50%;
+        margin-bottom: 2rem; } }
   :is(.profile__text, .profile__paragraph) {
     margin-bottom: 2rem; }

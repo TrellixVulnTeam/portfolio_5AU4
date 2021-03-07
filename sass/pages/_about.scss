@@ -21,8 +21,15 @@
     @include respond(tab-port){
         flex-direction: column;
         height: auto;
-        padding: 4rem;
+        padding: 0;
     }
+    }
+
+    &__img{
+        width: auto;
+        @include respond(phone){
+            width: 100%;
+        }
     }
     
 
@@ -49,12 +56,24 @@
         @include respond(tab-port){
             flex-direction: column;
             height: auto;
-            padding: 4rem;
+            padding: 0;
         }
     }
 
     &__text-box{
         width: 60rem;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+
+    }
+    &__img{
+        width: auto;
+        @include respond(phone){
+            width: 50%;
+            margin-bottom: $gutter-medium;
+        }
 
     }
     :is(&__text , &__paragraph){
