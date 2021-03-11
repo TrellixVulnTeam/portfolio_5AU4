@@ -30,7 +30,7 @@ body {
     backface-visibility: hidden;
     font-size: 2.4rem;
     line-height: 120%;
-    font-weight: 500;
+    font-weight: 700;
     @include respond(phone){
         font-size: 2.1rem;
     }
@@ -42,9 +42,9 @@ body {
 .paragraph {
     font-size: 1.6rem;
 
-    &:not(:last-child) {
+/*     &:not(:last-child) {
         margin-bottom: 3rem;
-    }
+    } */
 }
 .small{
     font-size: 1.2rem;

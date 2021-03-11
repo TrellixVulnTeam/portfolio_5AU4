@@ -67,27 +67,191 @@
         </div>
 
         <!-- PORTFOLIO GALLERY GRID -->
-        <article class="section-portfolio__container-grid" data-att="all">
+        <article class="section-portfolio__container-grid portfolio-items" data-att="all">
+            <!-- Portfolio item 1 -->
             <figure class="section-portfolio__card-project card" data-att="ui">
                 <!-- <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech"> -->
-                <div class="section-portfolio__text-card">
+                <figcaption class="section-portfolio__text-card">
                 <h2 class="heading-secondary">Project name</h2>
                 <p class="paragraph">Company | year</p>
-                </div>
+                <a href="#" class=" portfolio-link section-portfolio__link">View Case</a>
+                </figcaption>
+
+                <!--------------- Portfolio modal 1 --------------->                
+                <section class="modal section-portfolio__modal container-portfolio-modal display-none">
+
+                    <button class="modal__close">
+                        <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" focusable="false">
+                            <path d="M79.17 11.17L48 42.34 16.83 11.17l-5.66 5.66L42.34 48 11.17 79.17l5.66 5.66L48 53.66l31.17 31.17 5.66-5.66L53.66 48l31.17-31.17z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Section porfolio header-->
+                    <div class="modal__header">
+                        <div class="modal-header__text-box">
+                            <h1 class="heading-primary modal-header__title">project name</h1>
+                            <article class="modal-header__info-content">
+                            <p class="paragraph">Role: UX | UI Illustration.</p>
+                            <p class="paragraph">Date: 2020.</p>
+                            <p class="paragraph">Company: Company name.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                
+
+                    <!-- Section project info -->
+                    <section class="modal__project-info">
+                        <article class="project-info__container">
+                            <img class="project-info__img" src="" alt="">
+                            <div class="project-info__text-box">
+                                <span class="body-large">field</span>
+                                <h3 class="heading-tertiary project-info__name">Project Name</h3>
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet in cupiditate iure saepe non cumque deleniti animi quis unde earum at, vel quia cum voluptatibus excepturi ipsum, autem omnis.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Section define -->
+                    <section class="modal__define define">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Define</h2>
+                            <p class="paragraph modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia, alias quisquam eveniet, illo omnis repudiandae asperiores, ea ipsa saepe nostrum explicabo voluptatem. Ullam nisi tempora molestias saepe, ratione nostrum?</p>
+                        </article>
+                        <article class="define__boxes">
+                            
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">Project Goals</h3>
+                                <ol>
+                                    <ul class="define__goal-list">
+                                        <li class="paragraph define__goal-item">goal 1</li>
+                                        <li class="paragraph define__goal-item">goal 2</li>
+                                        <li class="paragraph define__goal-item">goal 3</li>
+                                        <li class="paragraph define__goal-item">goal 4</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">customer mindsets</h3>
+                                <p class="paragraph modal__text">paragraph text</p>
+                                <div class="mindset-box">
+                                    <span class="body-large">title | "insight"</span>
+                                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cum delectus aspernatur architecto nisi earum.</p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </section>
+                    <!-- Section ideate -->
+                    <section class="modal__ideate">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">ideate</h2>
+                            <p class="paragraph modalt__text">paragraph text</p>
+                        </article>
+                        <figure class="modal__img-complete">
+                            <img src="" alt="">
+                        </figure>
+                    </section>
+
+                    <!-- Section prototyping -->
+                    <section class="modal__prototype">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Prototyping</h2>
+                            <p class="paragraph modal__text">paragraph text</p>
+                        </article> 
+                        <figure class="modal__img-complete prototype__img">
+                            <img src="" alt="">
+                        </figure> 
+                        <figure class="modal__img-complete prototype__img">
+                            <img src="" alt="">
+                        </figure>      
+                        <figure class="modal__img-complete prototype__img">
+                            <img src="" alt="">
+                        </figure>                            
+                    </section>
+
+                    <!-- Section visual design -->
+                    <section class="modal__visual-design">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Visual design</h2>
+                            <p class="paragraph modal__text">paragraph text</p>
+                        </article> 
+                        <figure class="modal__img-complete">
+                            <div class="section-portfolio__text-card">
+                            <h2 class="heading-secondary">Project name</h2>
+                            <p class="paragraph">Company | year</p>
+                            </div>
+                        </figure>
+
+                        <figure class="modal__img-complete">
+                            <div class="section-portfolio__text-card">
+                            <h2 class="heading-secondary">Design system</h2>
+                            <p class="paragraph">Colors | typograpy</p>
+                            </div>
+                        </figure>
+
+
+                        <figure class="modal__img-complete">
+                            <div class="section-portfolio__text-card">
+                            <h2 class="heading-secondary">Components</h2>
+                            <p class="paragraph">text</p>
+                            </div>
+                        </figure>
+      
+                        <figure class="ideate__img">
+                            <img src="" alt="">
+                        </figure>  
+                    </section>
+
+                    <!-- Other Projects -->
+                    <section class="modal__other-projects">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Other Projects</h2>
+                            <hr>
+                        </article>
+                        <div class="other-projects__projects">
+                        <article class="other_projects__card-box">
+                            <figure class="other-projects__card" data-att="ui">
+                                <div class="section-portfolio__text-card">
+                                <h2 class="heading-secondary">Components</h2>
+                                <p class="paragraph">text</p>
+                                </div>
+                            </figure>
+                        </article>
+                        <article class="other_projects__card-box">
+                            <figure class="other-projects__card">
+                                <div class="section-portfolio__text-card">
+                                <h2 class="heading-secondary">Components</h2>
+                                <p class="paragraph">text</p>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    </section>
+
+                </section>
+
+                <!-- End modal 1 -->
             
             </figure>
+
+            <!-- Portfolio item 2 -->
             <figure class="section-portfolio__card-project card" data-att="ui">
                 <div class="section-portfolio__text-card">
                 <h2 class="heading-secondary">Project name</h2>
                 <p class="paragraph">Company | year</p>
                 </div>
             </figure>
+
+            <!-- Portfolio item 3 -->
             <figure class="section-portfolio__card-project card" data-att="visual">
                 <div class="section-portfolio__text-card">
                 <h2 class="heading-secondary">Project name</h2>
                 <p class="paragraph">Company | year</p>
                 </div>
             </figure>
+
+            <!-- Portfolio item 4 -->
             <figure class="section-portfolio__card-project card" data-att="visual">
                 <div class="section-portfolio__text-card">
                 <h2 class="heading-secondary">Project name</h2>

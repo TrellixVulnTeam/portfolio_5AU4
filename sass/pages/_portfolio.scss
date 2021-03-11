@@ -1,0 +1,269 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__close{
+        background: $color-yellow-dark;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba($color-black, .5);
+        height: 3em;
+        position: fixed;
+        right: 1em;
+        top: 1em;
+        border: 1px solid $color-white;
+        width: 3em;
+    }
+    &__icon{
+        fill: $color-white;
+        width: 2em;
+        height: 2em;
+    }
+    &__header{
+        align-items: center;
+        background-color: $color-grey-light;
+        display: flex;
+        min-height: 50rem;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    &__project-info{
+        border-radius: 2rem;
+        box-shadow: 0px 4px 2px rgba(34, 34, 34, 0.1);
+        margin: 4rem;
+        
+        justify-content: center;
+        max-width: 140rem;
+        display: flex;
+        padding: 4rem;
+
+        @include respond(tab-port){
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+    }
+    &__define{
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        @include respond(tab-port){
+            padding: 2rem;
+        }
+    }
+    &__text-box{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    &__img-complete{
+        background-color: $color-grey-light;
+        border-radius: 2rem;
+        height: 60rem;
+        max-width: 140rem;
+    }
+    &__img-complete:not(:last-child){
+        margin-bottom: 4rem;
+    }
+    &__title{
+        margin-bottom: 2rem;
+    }
+    &__text{
+        max-width: 80rem;
+        margin: auto;
+        text-align: left;
+        
+    }
+    &__ideate{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem;
+        @include respond(tab-port){
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+ 
+        
+
+    }
+    &__prototype{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem;
+
+        @include respond(tab-port){
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &__visual-design{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem;
+        @include respond(tab-port){
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            
+        }
+
+    }
+    &__other-projects{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem;
+        @include respond(tab-port){
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+
+    }
+
+}
+
+.modal-header{
+    &__text-box{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin-bottom: $gutter-vertical;
+    }
+    &__info-content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__text{
+        font-size: 5rem;
+    }
+}
+
+.project-info{
+
+    &__container{
+        display: flex;
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+    }
+    &__img{
+        background-color: $color-grey-light;
+        border-radius: 2rem;
+        margin-right: 4rem;
+        width: 50rem;
+        height: 30rem;
+        @include respond(tab-port){
+            margin: auto;
+            margin-bottom: 4rem;
+            width: 100%;
+        }
+
+    }
+    &__text-box{
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+}
+
+.define{
+    margin-bottom: 4rem;
+    &__boxes{
+        display: flex;
+        justify-content: center;   
+        @include respond(tab-port){
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__box{
+        background-color: $color-grey-light;
+        border-radius: 2rem;
+        padding: 4rem;
+        width: 50%;
+        text-align: left;
+        @include respond(tab-port){
+            width: 100%;
+        }  
+        
+    }
+    &__box:not(:last-child){
+        margin-right: 4rem;  
+        @include respond(tab-port){
+            margin-right: 0;
+            margin-bottom: 4rem;
+        }   
+    }
+    &__goal-list{
+        list-style: none;
+    }
+    &__goal-item::before{
+        content: "•";
+        color: $color-yellow-dark;
+        margin-right: 1rem;
+    }
+}
+
+.ideate{
+
+}
+
+.prototype{
+
+}
+
+.modal__visual-design{
+
+}
+
+.other-projects{
+    &__projects{
+        display: flex;
+        @include respond(tab-port){
+            flex-direction: column;
+        } 
+    }
+    &__card-box{
+        display: flex;
+        justify-content: center;
+
+        @include respond(tab-port){
+            width: 100%;
+        }  
+ 
+    }
+    &__card{
+        background-color: $color-grey-light;
+        border-radius: 2rem;
+        padding: 4rem;
+        width: 100%;
+        text-align: left;
+
+        @include respond(tab-port){
+            width: 100%;
+        }  
+        
+    }
+}

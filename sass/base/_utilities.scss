@@ -4,6 +4,9 @@
     opacity: 0;
     order: 1;
 }
+.display-none{
+    display: none !important;
+}
 
 .is-active {
     display: flex !important;
@@ -17,4 +20,8 @@
 }
 .menu-inactive{
     opacity: .4;
+}
+
+.flex{
+    display: flex !important;
 }

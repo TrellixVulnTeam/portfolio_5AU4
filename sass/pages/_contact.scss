@@ -57,6 +57,8 @@
         justify-content: space-between;
 
         @include respond(tab-port){
+            align-items: center;
+            justify-content: center;
             flex-direction: column-reverse;
             width: 100%;
         }

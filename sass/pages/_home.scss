@@ -54,6 +54,19 @@
     @include respond(tab-port){
         margin: 0;
     }
+    &__modal{
+        background-color: $color-white;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0 0 0 5em rgba($color-black-base, .5);
+        position: fixed;
+        z-index: 999;
+        top: 4rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: scroll;
+
+    }
     &__btn-container{
         display: flex;
         justify-content: center;

@@ -8,7 +8,7 @@
         margin: 2rem;
         transition: all 0.3s ease-out;
         //position: relative;
-        overflow: hidden;
+        //overflow: hidden;
         
     }
     .card{
@@ -34,5 +34,25 @@
         margin: 4rem;
         //position: absolute;
         top: 0; 
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__link{
+        text-decoration: none;
+
+        &,
+        &:link,
+        &:visited {
+            border-radius: 1rem;
+            color: $color-yellow-dark;
+            margin-top: 4rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            transition: all .2s;
+            transition: all .2s;
+
+        }
     }
 }
