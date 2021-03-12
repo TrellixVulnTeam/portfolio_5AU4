@@ -25,3 +25,26 @@
 .flex{
     display: flex !important;
 }
+
+// animations
+.move-in-heading{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+.move-in-subtitle{
+    animation: moveInBottom .5s ease-out 1s;
+    animation-fill-mode: backwards;
+}
+.header-animation{
+    animation: moveInTop .5s ease-out .5s;
+    animation-fill-mode: backwards;
+    @include respond(phone){
+        animation: none;
+    }
+}
+
+.img-hero-animation{
+    animation: moveInRight .5s ease-in .80s;
+    animation-fill-mode: backwards;
+    
+}
