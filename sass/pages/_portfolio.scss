@@ -13,6 +13,8 @@
         top: 1em;
         border: 1px solid $color-white;
         width: 3em;
+        outline: none;
+        cursor: pointer;
     }
     &__icon{
         fill: $color-white;

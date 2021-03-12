@@ -142,6 +142,19 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+/* modal animation */
+@keyframes modalIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modalOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 /* .btn {
     &,
     &:link,
@@ -948,7 +961,9 @@ body {
     right: 1em;
     top: 1em;
     border: 1px solid #fff;
-    width: 3em; }
+    width: 3em;
+    outline: none;
+    cursor: pointer; }
   .modal__icon {
     fill: #fff;
     width: 2em;
