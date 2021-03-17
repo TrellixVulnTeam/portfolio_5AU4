@@ -26,6 +26,11 @@
     display: flex !important;
 }
 
+.tooltip-active{
+    visibility: visible !important;
+    opacity: 1  !important;
+}
+
 // animations
 .move-in-heading{
     animation: moveInBottom .5s ease-out .75s;

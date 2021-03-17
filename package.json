@@ -12,6 +12,8 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "smooth-scrollbar": "^8.6.0"
+    "clipboard": "^2.0.8",
+    "smooth-scrollbar": "^8.6.0",
+    "tippy.js": "^6.3.1"
   }
 }
