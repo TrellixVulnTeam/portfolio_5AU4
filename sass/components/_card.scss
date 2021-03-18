@@ -8,8 +8,7 @@
         margin: 2rem;
         transition: all 0.3s ease-out;
         //position: relative;
-        //overflow: hidden;
-        
+        //overflow: hidden;     
     }
     .card{
         animation: portfolio .5s ease-in-out;
@@ -37,6 +36,12 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        color: $color-white;
+
+        & h2{
+            color: $color-white;
+
+        }
     }
 
     &__link{
@@ -72,4 +77,26 @@
             }
         }
     }
+}
+
+.card-project{
+
+    &__av{
+        background-image: url(../../img/thumbnail-av-expert.png);
+        background-size: cover;
+        background-position: center;
+
+
+        @media (min-resolution: 192dpi) and (max-width: 37.5em){ //37.5 em = 600px
+            background-image: url(../../img/thumbnail-av-expert-mobile.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__catalogo{
+        
+    }
+
+
 }

@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/svg" href="img/favicon.svg">
 
     <!-- tooltip styles -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian González | Portfolio</title>
@@ -70,7 +70,7 @@
             <div class="contact-btns__btns">
                 <button class="btn-contact btn-contact--secondary btn--animated"><a class="btn-contact__link" href="redirect-mailto.php"> Email me </a></button>
                 
-                <button id="myBtn" data-clipboard-text="sebgraph07@gmail.com"  class="tippy-box copy-button btn-contact btn-contact--primary btn-contact--animated">
+                <button id="myBtn" data-clipboard-text="sebgraph7&commat;gmail&period;com"  class="tippy-box copy-button btn-contact btn-contact--primary btn-contact--animated">
                     Copy mail
                 </button>
                 
@@ -113,6 +113,21 @@
     <!-- Production -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        new ClipboardJS('.copy-button');
+
+    // tooltip
+    tippy('#myBtn', {
+        content: 'Mail copied',
+         arrow: true,
+        animation: 'scale',
+        trigger: 'click',
+        delay: [300, 200],
+        theme: 'tooltip',
+        inertia: true
+     });
+    </script>
    
     
 </body>
