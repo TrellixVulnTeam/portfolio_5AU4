@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     &__close{
         background: $color-yellow-dark;
@@ -24,6 +25,10 @@
     &__header{
         align-items: center;
         background-color: $color-grey-light;
+        background-image: linear-gradient(to right bottom, rgba(34,34,34,0.8), rgba(20,12,3,0.8)), url(../../img/av-expert/hero-image-av.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: flex;
         min-height: 50rem;
         justify-content: center;
@@ -65,12 +70,19 @@
         flex-direction: column;
         margin-bottom: 4rem;
         text-align: center;
+        
     }
     &__img-complete{
         background-color: $color-grey-light;
         border-radius: 2rem;
         height: 60rem;
-        max-width: 140rem;
+        width: auto;
+        object-fit: cover;
+
+        @include respond(tab-port){
+            height: 100vh;
+            width: 100%;
+        }
     }
     &__img-complete:not(:last-child){
         margin-bottom: 4rem;
@@ -147,11 +159,13 @@
         flex-direction: column;
     }
     &__title{
+        color: $color-yellow-dark;
         margin-bottom: $gutter-vertical;
     }
     &__info-content{
         display: flex;
         flex-direction: column;
+        color: $color-white;
     }
     &__text{
         font-size: 5rem;
@@ -172,6 +186,7 @@
         margin-right: 4rem;
         width: 50rem;
         height: 30rem;
+        object-fit: cover;
         @include respond(tab-port){
             margin: auto;
             margin-bottom: 4rem;
@@ -182,6 +197,7 @@
     &__text-box{
         display: flex;
         flex-direction: column;
+        text-align: left;
     }
     &__name{
         font-weight: 700;
@@ -226,6 +242,18 @@
         color: $color-yellow-dark;
         margin-right: 1rem;
     }
+
+    &__mindset-box:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    &__mindset-box{
+
+        & span{
+            color: $color-yellow-dark;
+            font-weight: 700;
+        }
+    }
 }
 
 .ideate{
@@ -234,38 +262,36 @@
 
 .prototype{
 
+    & picture{
+        margin-bottom: 4rem;
+
+    }
+
+    &__text-img{
+        & img{
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__text{
+        margin-bottom: 2rem;
+    }
+    &__title{
+        text-align: center;
+    }
+
 }
 
-.modal__visual-design{
+.visual-design{
+
+    & picture{
+        margin-bottom: 4rem;
+    }
 
 }
 
-.other-projects{
-    &__projects{
-        display: flex;
-        @include respond(tab-port){
-            flex-direction: column;
-        } 
-    }
-    &__card-box{
-        display: flex;
-        justify-content: center;
-
-        @include respond(tab-port){
-            width: 100%;
-        }  
- 
-    }
-    &__card{
-        background-color: $color-grey-light;
-        border-radius: 2rem;
-        padding: 4rem;
-        width: 100%;
-        text-align: left;
-
-        @include respond(tab-port){
-            width: 100%;
-        }  
-        
+.end{
+    &__text{
+        color: $color-yellow-dark;
     }
 }

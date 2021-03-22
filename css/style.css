@@ -1109,7 +1109,8 @@ body {
 .modal {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .modal__close {
     background: #EF9700;
     border-radius: 50%;
@@ -1129,6 +1130,10 @@ body {
   .modal__header {
     align-items: center;
     background-color: #F5F5F5;
+    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.8), rgba(20, 12, 3, 0.8)), url(../../img/av-expert/hero-image-av.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     min-height: 50rem;
     justify-content: center;
@@ -1165,7 +1170,12 @@ body {
     background-color: #F5F5F5;
     border-radius: 2rem;
     height: 60rem;
-    max-width: 140rem; }
+    width: auto;
+    object-fit: cover; }
+    @media only screen and (max-width: 56.25em) {
+      .modal__img-complete {
+        height: 100vh;
+        width: 100%; } }
   .modal__img-complete:not(:last-child) {
     margin-bottom: 4rem; }
   .modal__title {
@@ -1223,11 +1233,13 @@ body {
   flex-direction: column; }
 
 .modal-header__title {
+  color: #EF9700;
   margin-bottom: 4rem; }
 
 .modal-header__info-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  color: #fff; }
 
 .modal-header__text {
   font-size: 5rem; }
@@ -1243,7 +1255,8 @@ body {
   border-radius: 2rem;
   margin-right: 4rem;
   width: 50rem;
-  height: 30rem; }
+  height: 30rem;
+  object-fit: cover; }
   @media only screen and (max-width: 56.25em) {
     .project-info__img {
       margin: auto;
@@ -1252,7 +1265,8 @@ body {
 
 .project-info__text-box {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: left; }
 
 .project-info__name {
   font-weight: 700;
@@ -1289,26 +1303,26 @@ body {
     content: "•";
     color: #EF9700;
     margin-right: 1rem; }
+  .define__mindset-box:not(:last-child) {
+    margin-bottom: 2rem; }
+  .define__mindset-box span {
+    color: #EF9700;
+    font-weight: 700; }
 
-.other-projects__projects {
-  display: flex; }
-  @media only screen and (max-width: 56.25em) {
-    .other-projects__projects {
-      flex-direction: column; } }
+.prototype picture {
+  margin-bottom: 4rem; }
 
-.other-projects__card-box {
-  display: flex;
-  justify-content: center; }
-  @media only screen and (max-width: 56.25em) {
-    .other-projects__card-box {
-      width: 100%; } }
+.prototype__text-img img {
+  margin-bottom: 4rem; }
 
-.other-projects__card {
-  background-color: #F5F5F5;
-  border-radius: 2rem;
-  padding: 4rem;
-  width: 100%;
-  text-align: left; }
-  @media only screen and (max-width: 56.25em) {
-    .other-projects__card {
-      width: 100%; } }
+.prototype__text {
+  margin-bottom: 2rem; }
+
+.prototype__title {
+  text-align: center; }
+
+.visual-design picture {
+  margin-bottom: 4rem; }
+
+.end__text {
+  color: #EF9700; }
