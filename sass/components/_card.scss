@@ -82,13 +82,13 @@
 .card-project{
 
     &__av{
-        background-image: url(../../img/thumbnail-av-expert.png);
+        background-image: url(../img/thumbnail-av-expert.png);
         background-size: cover;
         background-position: center;
 
 
         @media (min-resolution: 192dpi) and (max-width: 37.5em){ //37.5 em = 600px
-            background-image: url(../../img/thumbnail-av-expert-mobile.png);
+            background-image: url(../img/thumbnail-av-expert-mobile.png);
             background-size: cover;
             background-position: center;
         }
