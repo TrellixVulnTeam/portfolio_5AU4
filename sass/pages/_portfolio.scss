@@ -76,7 +76,7 @@
         background-color: $color-grey-light;
         border-radius: 2rem;
         height: 60rem;
-        width: auto;
+        width: 100%;
         object-fit: cover;
 
         @include respond(tab-port){
