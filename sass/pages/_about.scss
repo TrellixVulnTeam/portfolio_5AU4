@@ -5,6 +5,7 @@
     height: 50rem;
     justify-content: center;
     padding: 4rem;
+    width: 100%;
 
     @include respond(tab-port){
         height: auto;
@@ -41,6 +42,7 @@
     height: 50rem;
     justify-content: center;
     padding: 4rem;
+    width: 100%;
 
     @include respond(tab-port){
         height: auto;

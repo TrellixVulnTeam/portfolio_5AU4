@@ -17,7 +17,9 @@
         border-radius: 2rem;
         width: 35rem;
         height: 28rem;
-        background-color: $color-grey-light;
+        background-image: url(../img/avatar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
         @include respond(tab-port){
             margin-bottom: $gutter-medium;
         }

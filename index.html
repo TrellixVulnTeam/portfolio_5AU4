@@ -34,10 +34,10 @@
 
           <nav class="header__navigation">
             <ul class="header__list">
-                <li class="header__item menu-active"><img class="header__icon-responsive" src="img/work-icon.svg" alt=""><a class="header__link menu-active__link" href="index.html">Work</a></li>
-                <li class="header__item"><img class="header__icon-responsive" src="img/about-icon.svg" alt=""><a class="header__link" href="about.html">About</a></li>
-                <li class="header__item"><img class="header__icon-responsive" src="img/cv-icon.svg" alt=""><a class="header__link" href="cv.html">CV</a></li>
-                <li class="header__item"><img class="header__icon-responsive" src="img/contact-icon.svg" alt=""><a class="header__link" href="contact.html">Contact</a></li>
+                <li class="header__item menu-active"><a href="index.html"><img class="header__icon-responsive" src="img/work-icon.svg" alt=""><a class="header__link menu-active__link" href="index.html">Work</a></a></li>
+                <li class="header__item"><a href="about.html"><img class="header__icon-responsive" src="img/about-icon.svg" alt=""><a class="header__link" href="about.html">About</a></a></li>
+                <li class="header__item"><a href="cv.html"><img class="header__icon-responsive" src="img/cv-icon.svg" alt=""><a class="header__link" href="cv.html">CV</a></a></li>
+                <li class="header__item"><a href="contact.html"><img class="header__icon-responsive" src="img/contact-icon.svg" alt=""><a class="header__link" href="contact.html">Contact</a></a></li>
             </ul>
          </nav>
             
@@ -88,13 +88,13 @@
                     </button>
 
                     <!-- Section porfolio header-->
-                    <div class="modal__header">
+                    <div class="modal__header modal__header-av">
                         <div class="modal-header__text-box">
                             <h1 class="heading-primary modal-header__title">AV Expert</h1>
                             <article class="modal-header__info-content">
-                            <p class="paragraph">Role: UI design.</p>
-                            <p class="paragraph">Date: 2020.</p>
-                            <p class="paragraph">Company: Designed by Cheil.</p>
+                            <p class="paragraph"><strong> Role:</strong> UI design.</p>
+                            <p class="paragraph"><strong> Date:</strong> 2020.</p>
+                            <p class="paragraph"><strong> Company:</strong> Designed by Cheil.</p>
                             </article>
                         </div>
 
@@ -265,28 +265,546 @@
             </figure>
 
             <!-- Portfolio item 2 -->
-            <figure class="section-portfolio__card-project card-project__catalogo card" data-att="ui">
-                <div class="section-portfolio__text-card">
-                <h2 class="heading-secondary">Project name</h2>
-                <p class="paragraph">Company | year</p>
-                </div>
+            <figure class="section-portfolio__card-project card-project__essilor card" data-att="ui">
+
+                <!-- <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech"> -->
+                <figcaption class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Essilor APP</h2>
+                <p class="paragraph">Cheil | 2020</p>
+                <a href="#" class=" portfolio-link section-portfolio__link">View Case</a>
+                </figcaption>
+
+                <!--------------- Portfolio modal 2 --------------->                
+                <section class="modal section-portfolio__modal container-portfolio-modal display-none">
+
+                    <button class="modal__close">
+                        <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" focusable="false">
+                            <path d="M79.17 11.17L48 42.34 16.83 11.17l-5.66 5.66L42.34 48 11.17 79.17l5.66 5.66L48 53.66l31.17 31.17 5.66-5.66L53.66 48l31.17-31.17z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Section porfolio header-->
+                    <div class="modal__header modal__header-essilor">
+                        <div class="modal-header__text-box">
+                            <h1 class="heading-primary modal-header__title">Essilor APP</h1>
+                            <article class="modal-header__info-content">
+                            <p class="paragraph"><strong> Role:</strong> UI design.</p>
+                            <p class="paragraph"><strong> Date:</strong> 2020.</p>
+                            <p class="paragraph"><strong> Company:</strong> Cheil Colombia.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                
+
+                    <!-- Section project info -->
+                    <section class="modal__project-info">
+                        <article class="project-info__container">
+                            <img class="project-info__img" src="img/essilor/project.svg" alt="">
+                            <div class="project-info__text-box">
+                                <span class="body-large">Application</span>
+                                <h3 class="heading-tertiary project-info__name">Loyalty APP</h3>
+                                <p class="paragraph">Essilor application is a proposal for the brand that allow the people involved in the commercial process of the company such as optical shops, optometrist and promoters have a good option to earn benefits through their solds.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Section define -->
+                    <section class="modal__define define">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Define</h2>
+                            <p class="paragraph modal__text">The first stage in the planning of the app was to understand well the different roles in the process and identify the possible needs and interests of each person, through this research was possible to find the following insights:</p>
+                        </article>
+                        <article class="define__boxes">
+                            
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">Project Goals</h3>
+                                <ol>
+                                    <ul class="define__goal-list">
+                                        <li class="paragraph define__goal-item">Propose a new digital product of loyalty with the Essilor brand.</li>
+                                        <li class="paragraph define__goal-item">Develop an useful interface for the commercial process roles.</li>
+                                        <li class="paragraph define__goal-item">Create a system to redeem their monthly benefits.</li>
+                                        <li class="paragraph define__goal-item">Design an interface consistent with the brand and with friendly visuals and with microinteractions.</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">customer mindsets</h3>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Optical shops managers | “A digital interface of benefits would allow to grow the store.”</span>
+                                    <p class="paragraph">we are thinking in a digital tool for our workers benefits, that would be a solution and a good way to motivate them.</p>
+                                </div>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Promoters | “Would be great if we can earn benefits with my work”</span>
+                                    <p class="paragraph">The benefits increases the motivation and allow to all of us a healthy competence.</p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </section>
+                    <!-- Section ideate -->
+                    <section class="modal__ideate">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Ideate</h2>
+                            <p class="paragraph modal__text">With the research results of the UX team, I identified important information that allowed me to create a basic structure of the app that work for all profiles.</p>
+                        </article>
+
+                            <picture>
+                                <source srcset="img/essilor/ideate-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/essilor/ideate.png" alt="">
+                            </picture>
+
+                      
+                    </section>
+
+                    <!-- Section prototyping -->
+                    <section class="modal__prototype prototype">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Prototyping</h2>
+                            <p class="paragraph modal__text">In this application we developed a basic structure that allows display the relevant information for each profile, also the points status and shortcuts to the main sections that are: add, accumulate and redeem.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/essilor/prototyping-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/essilor/prototyping.png" alt="">
+                        </picture>
+                        
+                        <picture>
+                            <source srcset="img/essilor/prototyping-profile-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/essilor/prototyping-profile.png" alt="">
+                        </picture>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Scan code</h3>
+                            <p class="paragraph modal__text prototype__text">We think on an easy way to check and register new points for each sale, for this reason we use the code scan component that allows to speed up the process and at the same time control the out of products.</p>
+                            <picture>
+                                <source srcset="img/essilor/prototyping-scan-code-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/essilor/prototyping-scan-code.png" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="img/essilor/prototyping-scan-code2-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/essilor/prototyping-scan-code2.png" alt="">
+                            </picture>
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Benefits</h3>
+                            <p class="paragraph modal__text prototype__text">On this section we displayed all benefits that the user have at the moment, i used  different kinds of colours to represent active and inactives states with the points,  and empty states that invites the users to improve their rank.</p>
+                            <picture>
+                                <source srcset="img/essilor/prototyping-benefits-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/essilor/prototyping-benefits.png" alt="">
+                            </picture>
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Redeem the points</h3>
+                            <p class="paragraph modal__text prototype__text">To redeem the points for products we displayed a catalogue with category tabs, based on the points the user is able to change the quantity of products that they want.</p>
+                            <picture>
+                                <source srcset="img/essilor/prototyping-redeem-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/essilor/prototyping-redeem.png" alt="">
+                            </picture>
+                        </article>
+                    </section>
+
+                    <!-- Section visual design -->
+                    <section class="modal__visual-design visual-design">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Visual design</h2>
+                            <p class="paragraph modal__text">For the design system, I was based on brand values and developed a colour palette that identified the Essilor brand and optical shops environments with a light pattern, the colours were used to provide a  differentiation for each profile, also I defined a 
+                            type scale with the official fonts of Essilor, and used a component library that allow to solve tasks with userfriendly.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/essilor/visual-design-tipography-colors-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/essilor/visual-design-tipography-colors.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/essilor/visual-design-icons-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/essilor/visual-design-icons.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/essilor/visual-design-components-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/essilor/visual-design-components.png" alt="">
+                        </picture>
+                        
+                    </section>
+
+                    <!-- Ending -->
+                    <section class="modal__other-projects end">
+                        <article class="modal__text-box">
+                            <hr class="end__line">
+                            <h2 class="heading-secondary modal__title end__text">Thank you</h2>
+                        </article>
+                    </section>
+
+                </section>
+
+                <!-- End modal 2 -->
+            
             </figure>
 
             <!-- Portfolio item 3 -->
-            <figure class="section-portfolio__card-project card" data-att="visual">
-                <div class="section-portfolio__text-card">
-                <h2 class="heading-secondary">Project name</h2>
-                <p class="paragraph">Company | year</p>
-                </div>
+            <figure class="section-portfolio__card-project card-project__solve-for-tomorrow card"  data-att="visual">
+
+                <!-- <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech"> -->
+                <figcaption class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Solve for tomorrow</h2>
+                <p class="paragraph">Cheil | 2021</p>
+                <a href="#" class=" portfolio-link section-portfolio__link">View Case</a>
+                </figcaption>
+
+                <!--------------- Portfolio modal 3 --------------->                
+                <section class="modal section-portfolio__modal container-portfolio-modal display-none">
+
+                    <button class="modal__close">
+                        <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" focusable="false">
+                            <path d="M79.17 11.17L48 42.34 16.83 11.17l-5.66 5.66L42.34 48 11.17 79.17l5.66 5.66L48 53.66l31.17 31.17 5.66-5.66L53.66 48l31.17-31.17z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Section porfolio header-->
+                    <div class="modal__header modal__header-solve-for-tomorrow">
+                        <div class="modal-header__text-box">
+                            <h1 class="heading-primary modal-header__title">Solve For Tomorrow website</h1>
+                            <article class="modal-header__info-content">
+                            <p class="paragraph"><strong> Role:</strong> UI design.</p>
+                            <p class="paragraph"><strong> Date:</strong> 2021.</p>
+                            <p class="paragraph"><strong> Company:</strong> Samsung Colombia.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                
+
+                    <!-- Section project info -->
+                    <section class="modal__project-info">
+                        <article class="project-info__container">
+                            <img class="project-info__img" src="img/solve-for-tomorrow/project.svg" alt="">
+                            <div class="project-info__text-box">
+                                <span class="body-large">Website</span>
+                                <h3 class="heading-tertiary project-info__name">Contest site</h3>
+                                <p class="paragraph">Solve For Tomorrow is a global Samsung initiative that rewards the new ideas which change the communities, this contest is target to students and their teachers looking for innovation and creativity with new projects.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Section define -->
+                    <section class="modal__define define">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Define</h2>
+                            <p class="paragraph modal__text">To understand the multiple ideas and projects we started reviewing previous contests and the possible interests of the students and teachers to show  their creations and how it impacts in the community.</p>
+                        </article>
+                        <article class="define__boxes">
+                            
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">Project Goals</h3>
+                                <ol>
+                                    <ul class="define__goal-list">
+                                        <li class="paragraph define__goal-item">Develop a website that invite the students to present their own projects.</li>
+                                        <li class="paragraph define__goal-item">Communicate clearly to students and teachers how the contest works.</li>
+                                        <li class="paragraph define__goal-item">Provide useful information and tools for a success production of their projects.</li>
+                                        <li class="paragraph define__goal-item">Clarify all doubts about the contest.</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">customer mindsets</h3>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Students | “A good opportunity to show to world our project.”</span>
+                                    <p class="paragraph">We have good ideas for innovate with projects and we want to present them for move and change our communities.</p>
+                                </div>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Teachers | “There are great ideas everywhere in the country”</span>
+                                    <p class="paragraph">This is a great opportunity to show how the education everywhere in the country is able to change the present and future of the kids with the creativity.</p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </section>
+                    <!-- Section ideate -->
+                    <section class="modal__ideate">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Ideate</h2>
+                            <p class="paragraph modal__text">With the ux team research, I identified some key points to transform them in an attractive interface that allows the users in this case students of schools and teachers find easily the tools to register their proposals and provide them information in the best way.</p>
+                        </article>
+
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/ideate-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/ideate.png" alt="">
+                            </picture>
+
+                      
+                    </section>
+
+                    <!-- Section prototyping -->
+                    <section class="modal__prototype prototype">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Prototyping</h2>
+                            <p class="paragraph modal__text">This site was build to have a good and faster understanding of the subscribe process, in the home page we clarify what Solve For Tomorrow is and what are te terms around it, also the steps to register and after the form if the user have doubts  also there ir a FAQ section and previous winner projects for inspiration.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/prototyping-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/prototyping-responsive-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-responsive.png" alt="">
+                        </picture>
+                        
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/prototyping-profile-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-profile.png" alt="">
+                        </picture>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Form</h3>
+                            <p class="paragraph modal__text prototype__text">We analysed the needed data and categorize it in a stepper that allows the user check all required information and i used components that help the user to complete successfully the process. </p>
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/prototyping-form-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-form.png" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/prototyping-form2-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-form2.png" alt="">
+                            </picture>
+  
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Previous versions</h3>
+                            <p class="paragraph modal__text prototype__text">On this section we displayed videos of the last winners of the contest that allows to inspire the students that want to register and send their own proposals.</p>
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/prototyping-previous-versions-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-previous-versions.png" alt="">
+                            </picture>
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Resources</h3>
+                            <p class="paragraph modal__text prototype__text">The resources section allows the students see video capsules with tips and information to create a better project quality.</p>
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/prototyping-resources-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-resources.png" alt="">
+                            </picture>
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">FAQ</h3>
+                            <p class="paragraph modal__text prototype__text">The FAQ section is needed to answer all doubts about the contest, in this section we categorize the questions to make easier the search.</p>
+                            <picture>
+                                <source srcset="img/solve-for-tomorrow/prototyping-FAQ-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/solve-for-tomorrow/prototyping-FAQ.png" alt="">
+                            </picture>
+                        </article>
+                    </section>
+
+                    <!-- Section visual design -->
+                    <section class="modal__visual-design visual-design">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Visual design</h2>
+                            <p class="paragraph modal__text">For the design system, I was based on brand values and developed a colour palette that identify the contest in colombia, i used animated illustrations with a child style that provide  interactive to the site.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/visual-design-tipography-colors-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/visual-design-tipography-colors.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/visual-design-icons-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/visual-design-icons.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/visual-design-illustrations-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/visual-design-illustrations.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/solve-for-tomorrow/visual-design-components-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/solve-for-tomorrow/visual-design-components.png" alt="">
+                        </picture>
+                        
+                    </section>
+
+                    <!-- Ending -->
+                    <section class="modal__other-projects end">
+                        <article class="modal__text-box">
+                            <hr class="end__line">
+                            <h2 class="heading-secondary modal__title end__text">Thank you</h2>
+                        </article>
+                    </section>
+
+                </section>
+
+                <!-- End modal 3 -->
+            
             </figure>
 
             <!-- Portfolio item 4 -->
-            <figure class="section-portfolio__card-project card" data-att="visual">
-                <div class="section-portfolio__text-card">
-                <h2 class="heading-secondary">Project name</h2>
-                <p class="paragraph">Company | year</p>
-                </div>
+            <figure class="section-portfolio__card-project card-project__landing-s21 card" data-att="ui">
 
+                <!-- <img class="section-portfolio__img" src="https://placeimg.com/630/630/tech" alt="Tech"> -->
+                <figcaption class="section-portfolio__text-card">
+                <h2 class="heading-secondary">Landing S21</h2>
+                <p class="paragraph">Samsung | 2021</p>
+                <a href="#" class=" portfolio-link section-portfolio__link">View Case</a>
+                </figcaption>
+
+                <!--------------- Portfolio modal 4 --------------->                
+                <section class="modal section-portfolio__modal container-portfolio-modal display-none">
+
+                    <button class="modal__close">
+                        <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" focusable="false">
+                            <path d="M79.17 11.17L48 42.34 16.83 11.17l-5.66 5.66L42.34 48 11.17 79.17l5.66 5.66L48 53.66l31.17 31.17 5.66-5.66L53.66 48l31.17-31.17z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Section porfolio header-->
+                    <div class="modal__header modal__header-landing-s21">
+                        <div class="modal-header__text-box">
+                            <h1 class="heading-primary modal-header__title">Samsung Landing S21</h1>
+                            <article class="modal-header__info-content">
+                            <p class="paragraph"><strong> Role:</strong> UI design.</p>
+                            <p class="paragraph"><strong> Date:</strong> 2021.</p>
+                            <p class="paragraph"><strong> Company:</strong> Samsung Colombia.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                
+
+                    <!-- Section project info -->
+                    <section class="modal__project-info">
+                        <article class="project-info__container">
+                            <img class="project-info__img" src="img/s21/project.svg" alt="">
+                            <div class="project-info__text-box">
+                                <span class="body-large">Landing page</span>
+                                <h3 class="heading-tertiary project-info__name">S21 launching</h3>
+                                <p class="paragraph">The S21 landing page was made for the launching of the device and allows to inform about its features and have a 360 view of the phone.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Section define -->
+                    <section class="modal__define define">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Define</h2>
+                            <p class="paragraph modal__text">The requirement asked for a site that allows the user have all new features of the launching and have detailed information of the functionalities.</p>
+                        </article>
+                        <article class="define__boxes">
+                            
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">Project Goals</h3>
+                                <ol>
+                                    <ul class="define__goal-list">
+                                        <li class="paragraph define__goal-item">Inform all new features of the phone in a landing page.</li>
+                                        <li class="paragraph define__goal-item">To develop an interface that follow the samsung brand guidelines.</li>
+                                        <li class="paragraph define__goal-item">Create a 360 experience for the launching models and the possibility to compare them.</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                            <div class="define__box">
+                                <h3 class="heading-tertiary modal__title">customer mindsets</h3>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Samsung managers | “Is important communicate the features of the product.”</span>
+                                    <p class="paragraph">We are thinking in a landing site that follows all requirement of the brand and inform specific features before the launching.</p>
+                                </div>
+                                <div class="define__mindset-box">
+                                    <span class="body-large">Customers | “What is new regard to S21”</span>
+                                    <p class="paragraph">We would like to know about all features and models of this phone, how much is it and what about offers.</p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </section>
+
+                    <!-- Section prototyping -->
+                    <section class="modal__prototype prototype">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Prototyping</h2>
+                            <p class="paragraph modal__text">The structure of this landing page follow the global Samsung guides and the local .com site, we create an structure were the user find easily the detailed information of each feature.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/s21/prototyping-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/s21/prototyping.png" alt="">
+                        </picture>
+                        
+                        <picture>
+                            <source srcset="img/s21/prototyping-profile-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/s21/prototyping-profile.png" alt="">
+                        </picture>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Specifications</h3>
+                            <p class="paragraph modal__text prototype__text">The structure of this landing page follow the global Samsung guides and the local .com site, we create an structure were the user find easily the detailed information of each feature.</p>
+                            <picture>
+                                <source srcset="img/s21/prototyping-specifications-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/s21/prototyping-specifications.png" alt="">
+                            </picture>
+  
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">360 view</h3>
+                            <p class="paragraph modal__text prototype__text">At this section I proposed tabs with the models and a call to action that open a popup with the 360 experience that allows the user to move freely the phone.</p>
+                            <picture>
+                                <source srcset="img/s21/prototyping-360-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/s21/prototyping-360.png" alt="">
+                            </picture>
+
+                            <picture>
+                                <source srcset="img/s21/prototyping-360-2-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/s21/prototyping-360-2.png" alt="">
+                            </picture>
+                        </article>
+
+                        <article class="prototype__text-img">
+                            <h3 class="heading-tertiary modal__title prototype__title">Compare models</h3>
+                            <p class="paragraph modal__text prototype__text">At this part the user is able to open a popup that display the relevant information of the all devices at the same time.</p>
+                            <picture>
+                                <source srcset="img/s21/prototyping-compare-mobile.png" media="(max-width:900px)">
+                                <img class="modal__img-complete" src="img/s21/prototyping-compare.png" alt="">
+                            </picture>
+                        </article>
+                    </section>
+
+                    <!-- Section visual design -->
+                    <section class="modal__visual-design visual-design">
+                        <article class="modal__text-box">
+                            <h2 class="heading-secondary modal__title">Visual design</h2>
+                            <p class="paragraph modal__text">For the visual structure I used the official elements of the samsung brand and applied the basic colour palette and the official font for titles and body text, designing the site through modules.</p>
+                        </article>
+
+                        <picture>
+                            <source srcset="img/s21/visual-design-tipography-colors-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/s21/visual-design-tipography-colors.png" alt="">
+                        </picture>
+
+                        <picture>
+                            <source srcset="img/s21/visual-design-components-mobile.png" media="(max-width:900px)">
+                            <img class="modal__img-complete" src="img/s21/visual-design-components.png" alt="">
+                        </picture>
+                        
+                    </section>
+
+                    <!-- Ending -->
+                    <section class="modal__other-projects end">
+                        <article class="modal__text-box">
+                            <hr class="end__line">
+                            <h2 class="heading-secondary modal__title end__text">Thank you</h2>
+                        </article>
+                    </section>
+
+                </section>
+
+                <!-- End modal 4 -->
+            
             </figure>
         </article>
         <!-- END GRID -->
@@ -302,9 +820,9 @@
         <h2 class="footer__heading heading-secondary">Let’s work together</h3>
         <p class="footer__text heading-tertiary">Also you can check my work here</p>
         <div class="footer__social-container">
-            <i class="fab fa-instagram-square footer__social-item"></i>
-            <i class="fab fa-linkedin footer__social-item"></i>
-            <i class="fab fa-behance-square footer__social-item"></i>            
+            <a class="footer__social-item" href="https://www.linkedin.com/in/sebgraph" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="footer__social-item" href="https://www.behance.net/seb-graph" target="_blank"><i class="fab fa-behance-square"></i></a>    
+            <a class="footer__social-item" href="https://www.instagram.com/sebgraph/" target="_blank"><i class="fab fa-instagram-square"></i></a>        
         </div>
         <p class="footer__small">All content and images Copyright © 2021 Sebastian González</p>
     </footer>

@@ -365,7 +365,8 @@ body {
 
 .btn-contact {
   margin: 2rem;
-  position: relative; }
+  position: relative;
+  border: solid 1px #EF9700 !important; }
   @media only screen and (max-width: 37.5em) {
     .btn-contact {
       position: static; } }
@@ -477,6 +478,7 @@ body {
     transition: all .2s;
     border-bottom: 0.3rem solid #EF9700;
     width: fit-content;
+    width: -moz-max-content;
     padding: 1rem; }
   .section-portfolio__link:hover {
     background-color: #EF9700;
@@ -495,6 +497,36 @@ body {
   @media (min-resolution: 192dpi) and (max-width: 37.5em) {
     .card-project__av {
       background-image: url(../img/thumbnail-av-expert-mobile.png);
+      background-size: cover;
+      background-position: center; } }
+
+.card-project__essilor {
+  background-image: url(../img/thumbnail-essilor.png);
+  background-size: cover;
+  background-position: center; }
+  @media (min-resolution: 192dpi) and (max-width: 37.5em) {
+    .card-project__essilor {
+      background-image: url(../img/thumbnail-essilor-mobile.png);
+      background-size: cover;
+      background-position: center; } }
+
+.card-project__solve-for-tomorrow {
+  background-image: url(../img/thumbnail-solve-for-tomorrow.png);
+  background-size: cover;
+  background-position: center; }
+  @media (min-resolution: 192dpi) and (max-width: 37.5em) {
+    .card-project__solve-for-tomorrow {
+      background-image: url(../img/thumbnail-solve-for-tomorrow-mobile.png);
+      background-size: cover;
+      background-position: center; } }
+
+.card-project__landing-s21 {
+  background-image: url(../img/thumbnail-landing-s21.png);
+  background-size: cover;
+  background-position: center; }
+  @media (min-resolution: 192dpi) and (max-width: 37.5em) {
+    .card-project__landing-s21 {
+      background-image: url(../img/thumbnail-landing-s21-mobile.png);
       background-size: cover;
       background-position: center; } }
 
@@ -749,7 +781,8 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 4rem;
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       padding-bottom: 14rem; } }
@@ -762,7 +795,9 @@ body {
     justify-content: center;
     margin-bottom: 2rem; }
   .footer__social-item {
-    font-size: 4rem; }
+    font-size: 6rem;
+    text-decoration: none;
+    color: #140C03; }
     .footer__social-item:not(:last-child) {
       margin-right: 3rem; }
 
@@ -853,7 +888,8 @@ body {
   display: flex;
   height: 50rem;
   justify-content: center;
-  padding: 4rem; }
+  padding: 4rem;
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .hero-about {
       height: auto; } }
@@ -879,7 +915,8 @@ body {
   display: flex;
   height: 50rem;
   justify-content: center;
-  padding: 4rem; }
+  padding: 4rem;
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .profile {
       height: auto; } }
@@ -926,7 +963,9 @@ body {
     border-radius: 2rem;
     width: 35rem;
     height: 28rem;
-    background-color: #F5F5F5; }
+    background-image: url(../img/avatar.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
     @media only screen and (max-width: 56.25em) {
       .name-cv__img {
         margin-bottom: 2rem; } }
@@ -1065,7 +1104,8 @@ body {
   display: flex;
   height: 50rem;
   justify-content: center;
-  padding: 4rem; }
+  padding: 4rem;
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .hero-contact {
       height: auto; } }
@@ -1130,7 +1170,6 @@ body {
   .modal__header {
     align-items: center;
     background-color: #F5F5F5;
-    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.8), rgba(20, 12, 3, 0.8)), url(../img/av-expert/hero-image-av.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1138,6 +1177,14 @@ body {
     min-height: 50rem;
     justify-content: center;
     width: 100%; }
+  .modal__header-av {
+    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.8), rgba(20, 12, 3, 0.8)), url(../img/av-expert/hero-image-av.png); }
+  .modal__header-essilor {
+    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.9), rgba(20, 12, 3, 0.9)), url(../img/essilor/hero-image-essilor.png); }
+  .modal__header-solve-for-tomorrow {
+    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.9), rgba(20, 12, 3, 0.9)), url(../img/solve-for-tomorrow/hero-image-solve-for-tomorrow.png); }
+  .modal__header-landing-s21 {
+    background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.9), rgba(20, 12, 3, 0.9)), url(../img/s21/hero-image-landing-s21.png); }
   .modal__project-info {
     border-radius: 2rem;
     box-shadow: 0px 4px 2px rgba(34, 34, 34, 0.1);
@@ -1170,7 +1217,7 @@ body {
     background-color: #F5F5F5;
     border-radius: 2rem;
     height: 60rem;
-    width: 100%;
+    width: auto;
     object-fit: cover; }
     @media only screen and (max-width: 56.25em) {
       .modal__img-complete {
@@ -1326,3 +1373,9 @@ body {
 
 .end__text {
   color: #EF9700; }
+
+.end__line {
+  border: 3px solid #000;
+  width: 6rem;
+  margin: auto;
+  margin-bottom: 2rem; }

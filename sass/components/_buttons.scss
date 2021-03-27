@@ -206,6 +206,7 @@
 .btn-contact {
     margin: 2rem;
     position: relative;
+    border: solid 1px $color-yellow-dark  !important;
     
     @include respond(phone){
         position: static;

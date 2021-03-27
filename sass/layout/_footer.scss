@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 4rem;
     text-align: center;
+    margin-top: 2rem;
     @include respond(phone){
         padding-bottom: 14rem;
     }
@@ -23,7 +24,9 @@
         margin-bottom: 2rem;
     }
     &__social-item{
-        font-size: 4rem;
+        font-size: 6rem;
+        text-decoration: none;
+        color: $color-brown-dark;
 
         &:not(:last-child) {
             margin-right: 3rem;

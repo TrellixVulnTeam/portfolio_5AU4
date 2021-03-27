@@ -59,6 +59,7 @@
             transition: all .2s;
             border-bottom: .3rem solid $color-yellow-dark;
             width: fit-content;
+            width: -moz-max-content;
             padding: 1rem;
 
         }
@@ -94,9 +95,46 @@
         }
     }
 
-    &__catalogo{
-        
+    &__essilor{
+        background-image: url(../img/thumbnail-essilor.png);
+        background-size: cover;
+        background-position: center;
+
+
+        @media (min-resolution: 192dpi) and (max-width: 37.5em){ //37.5 em = 600px
+            background-image: url(../img/thumbnail-essilor-mobile.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__solve-for-tomorrow{
+        background-image: url(../img/thumbnail-solve-for-tomorrow.png);
+        background-size: cover;
+        background-position: center;
+
+
+        @media (min-resolution: 192dpi) and (max-width: 37.5em){ //37.5 em = 600px
+            background-image: url(../img/thumbnail-solve-for-tomorrow-mobile.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__landing-s21{
+        background-image: url(../img/thumbnail-landing-s21.png);
+        background-size: cover;
+        background-position: center;
+
+
+        @media (min-resolution: 192dpi) and (max-width: 37.5em){ //37.5 em = 600px
+            background-image: url(../img/thumbnail-landing-s21-mobile.png);
+            background-size: cover;
+            background-position: center;
+        }
     }
 
 
+
 }
+
