@@ -43,3 +43,8 @@ html{
 body{
     box-sizing:border-box;
 }
+
+::selection{
+    background-color: $color-yellow-dark;
+    color: $color-white;
+}

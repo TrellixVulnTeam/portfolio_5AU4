@@ -24,7 +24,6 @@ export default function modal(){
         const modalClose = _ => {
             modal.classList.add('display-none');
             modal.removeEventListener('animationend', modalClose);
-
         }
 
         // to animate close button
