@@ -6,6 +6,12 @@
     padding: 4rem;
     text-align: center;
     margin-top: 2rem;
+
+    body.dark-mode &{
+        background-color: $color-black-base;
+    }
+
+
     @include respond(phone){
         padding-bottom: 14rem;
     }
@@ -27,6 +33,10 @@
         font-size: 6rem;
         text-decoration: none;
         color: $color-brown-dark;
+
+        body.dark-mode &{
+            color: $color-yellow-light;
+        }
 
         &:not(:last-child) {
             margin-right: 3rem;

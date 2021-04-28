@@ -37,6 +37,10 @@
                color: $color-black-base;
                font-weight: 600;        
         }
+
+        body.dark-mode &{
+            color: $color-white;
+        }
     }
 
 }

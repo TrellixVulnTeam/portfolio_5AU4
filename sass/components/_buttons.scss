@@ -310,3 +310,35 @@
 }
 
 
+.dark-theme-btn{
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: $color-yellow-dark;
+    color: $color-black-base;
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: calc(4.25rem + 1vw);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all .3s ease-out;
+    
+
+    @include respond(phone){
+        bottom: 12rem;
+    }
+
+}
+.dark-theme-btn:hover{
+    background-color: $color-yellow-light;
+    color: $color-white;
+
+}
+
+

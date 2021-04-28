@@ -1,3 +1,4 @@
+import darkTheme from "./modules/dark_theme.js";
 import hamburguerMenu from "./modules/hamburger_menu.js";
 import modal from "./modules/modal.js";
 import portfolioFilter from "./modules/portfolio_filter.js";
@@ -11,3 +12,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
     tabBar(".header__item");
     modal();
 });
+
+darkTheme(".dark-theme-btn", "dark-mode");

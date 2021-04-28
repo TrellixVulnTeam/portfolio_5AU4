@@ -2,7 +2,7 @@
     position: sticky;
     align-items: center;
     background-color: $color-white;
-    max-width: $width-container;
+    max-width: 100%;
     margin: auto;
     justify-content: space-between;
     height: 7.4rem;
@@ -10,6 +10,11 @@
     flex-direction: row;
     //padding: 2rem 4rem;
     padding: 4rem;
+    
+
+    body.dark-mode &{
+        background-color: $color-yellow-dark;
+    }
 
     @include respond(phone){
         justify-content: center;
@@ -32,6 +37,10 @@
         outline: none;
         color: $color-black;
         // margin-left: 4rem;
+
+        body.dark-mode &{
+            color: $color-white;
+        }
 
         @include respond(phone){
             flex-direction: column;
@@ -72,6 +81,10 @@
             width: 100vw;
             justify-content: center;
             align-items: center;
+
+            body.dark-mode &{
+                background-color: $color-yellow-dark;
+            }
         }
     }
     &__item{

@@ -63,7 +63,7 @@
     grid-gap: 4rem;
     margin: auto;
     max-width: $width-container;
-    padding: 0 4rem;
+    padding: 4rem;
 
     grid-template-areas: "name-cv name-cv name-cv name-cv name-cv"
                          "profile-cv profile-cv profile-cv profile-cv profile-cv"
@@ -93,8 +93,26 @@
     .name-cv{
         border-radius: 2rem;
         grid-area: name-cv;
-        background-color: $color-yellow-dark;
+        background-color: $color-white;
         padding: 4rem;
+
+        & h1{
+            color: $color-black;
+            body.dark-mode &{
+                color: $color-white;
+            }
+        }
+
+        & span{
+            color: $color-black;
+            body.dark-mode &{
+                color: $color-white;
+            }
+        }
+
+        body.dark-mode &{
+            background-color: $color-black;
+        }
 
     }
     .profile-cv{
@@ -102,6 +120,10 @@
         grid-area: profile-cv;
         background-color: $color-grey-light;
         padding: 4rem;
+
+        body.dark-mode &{
+            background-color: $color-black-base;
+        }
 
     }
     .experience-cv{
@@ -117,12 +139,20 @@
         background-color: $color-grey-light;
         padding: 4rem;
 
+        body.dark-mode &{
+            background-color: $color-black-base;
+        }
+
     }
     .skills-cv{
         border-radius: 2rem;
         grid-area: skills-cv;
         background-color: $color-grey-light;
         padding: 4rem;
+
+        body.dark-mode &{
+            background-color: $color-black-base;
+        }
 
     }
     .languages-cv{
@@ -143,6 +173,10 @@
         grid-area: download-cv;
         background-color: $color-white;
         padding: 4rem;
+
+        body.dark-mode &{
+            background-color: $color-black-base;
+        }
 
     }
 
@@ -166,7 +200,6 @@
     }
     .contact-btns{
         grid-area: info;
-        background-color: $color-white;
         padding: 4rem;
 
     }

@@ -2,11 +2,15 @@
     align-items: center;
     background-color: $color-grey-light;
     justify-content: space-between;
-    margin: 0 4rem;
+    margin: 4rem 4rem 0 4rem;
     border-radius: 2rem;
     padding: 4rem;
     display: flex;
     flex-direction: row;
+
+    body.dark-mode &{
+        background-color: $color-black-base;
+    }
 
     @include respond(phone){
         padding:2rem;
@@ -49,7 +53,6 @@
 }
 
 .section-portfolio{
-    background-color: $color-white;
     margin: 0 2rem;
     @include respond(tab-port){
         margin: 0;
@@ -77,6 +80,10 @@
         &::-webkit-scrollbar-thumb {
           background-color: $color-yellow-dark;
           border-radius: 5rem;
+        }
+
+        body.dark-mode &{
+            background-color: $color-black-base;
         }
 
     }

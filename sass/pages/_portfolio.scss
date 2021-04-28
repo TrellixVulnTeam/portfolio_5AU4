@@ -238,6 +238,12 @@
         padding: 4rem;
         width: 50%;
         text-align: left;
+
+        body.dark-mode &{
+            background-color: $color-black;
+        }
+
+
         @include respond(tab-port){
             width: 100%;
         }  
